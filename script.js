@@ -1,4 +1,4 @@
-let container = document.querySelector('.container')
+const container = document.querySelector('.container')
 DrawGrid()
 document.querySelector('#eraser').addEventListener("click",()=>{DrawGrid()})
 function DrawGrid(){
@@ -19,3 +19,8 @@ function DrawGrid(){
     container.append(pixel)
     }
 }
+container.addEventListener("click",function(e){
+    if(e.target.classList.contains("pixel")){
+        e.target.classList("nigga")
+    }
+})
